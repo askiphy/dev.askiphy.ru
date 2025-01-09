@@ -161,6 +161,11 @@ export const translations: Translation[] = [
         ruText: "Контакты",
         engText: "Contacts"
     },
+    {
+        code: "source",
+        ruText: "Исходный код",
+        engText: "Source code"
+    },
 ]
 
 export function getTranslation(code: string) {
