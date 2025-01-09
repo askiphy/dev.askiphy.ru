@@ -1,0 +1,15 @@
+---
+import {projects} from "../utils/consts"
+import ProjectCard from "./Card.astro";
+---
+
+<ul role="list" class="myGrid">
+    {
+        projects.map((project) => <ProjectCard
+                name={project.name}
+                desc={project.description}
+                img={project.img}
+                href={project.href}
+        />)
+    }
+</ul>

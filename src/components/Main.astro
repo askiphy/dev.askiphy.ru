@@ -1,0 +1,24 @@
+---
+import { getAge, getTranslation } from "../utils/utils";
+import Projects from "./Projects.astro";
+import Tools from "./Tools.astro";
+import Friends from "./Friends.astro";
+import Contacts from "./Contacts.astro";
+
+const age = getAge();
+---
+
+<main>
+    <div class="">
+        <h1 class="text-blue-50 text-4xl text-center m-8 underline">{getTranslation("name")}</h1>
+        <p class="text-center text-2xl text-blue-50">{getTranslation("about").replace("{age}", age)}</p>
+        <p class="text-center text-2xl text-blue-50 m-8 underline">{getTranslation("contacts")}</p>
+        <Contacts />
+        <p class="text-center text-2xl text-blue-50 m-8 underline">{getTranslation("tools")}</p>
+        <Tools />
+        <p class="text-center text-2xl text-blue-50 m-8 underline">{getTranslation("friends")}</p>
+        <Friends />
+        <p class="text-center text-2xl text-blue-50 m-8 underline">{getTranslation("projects")}</p>
+        <Projects />
+    </div>
+</main>

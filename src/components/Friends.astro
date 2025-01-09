@@ -1,0 +1,17 @@
+---
+import {friends} from "../utils/consts";
+import BestFriend from "./BestFriend.astro";
+import Card from "./Card.astro";
+---
+
+<ul role="list" class="myGrid">
+    {
+        friends.map(friend => {
+            if (friend.isBest) {
+                return <BestFriend name={friend.name} desc={friend.comment} img={friend.image} href={friend.href} />
+            } else {
+                return <Card name={friend.name} desc={friend.comment} img={friend.image} href={friend.href} />
+            }
+        })
+    }
+</ul>
