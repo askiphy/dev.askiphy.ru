@@ -30,10 +30,10 @@ export const friends: Friend[] = [
         image: "https://askiphy.ru/team/metla.png"
     },
     {
-        name: getTranslation("friend.nekrispes"),
-        comment: getTranslation("friend.nekrispes.comment"),
-        href: "https://t.me/nekrispes228",
-        image: "./friends/nekrispes.jpg",
+        name: getTranslation("friend.axolotkirill"),
+        comment: getTranslation("friend.axolotkirill.comment"),
+        href: "https://www.youtube.com/@Axolotlkirill",
+        image: "./friends/axolotkirill.jpg",
         isBest: true
     },
     {

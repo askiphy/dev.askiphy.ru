@@ -87,12 +87,12 @@ export const translations: Translation[] = [
         engText: "Friends"
     },
     {
-        code: "friend.nekrispes",
-        ruText: "НеКриспес (Уточка)",
-        engText: "NeKrispes_ (Duck)"
+        code: "friend.axolotkirill",
+        ruText: "AxolotKirill",
+        engText: "AxolotKirill"
     },
     {
-        code: "friend.nekrispes.comment",
+        code: "friend.axolotkirill.comment",
         ruText: "Мой третий друг :3",
         engText: "My third friend :3"
     },
